@@ -1,26 +1,8 @@
-public class QueueList implements IntQueue{
-    @Override
-    public boolean empty() {
-        return false;
-    }
-
-    @Override
-    public void add(int item) {
-
-    }
-
-    @Override
-    public int peek() {
-        return 0;
-    }
-
-    @Override
-    public int remove() {
-        return 0;
-    }
-
-    ///  main method to test the class.
-    static void main() {
-
-    }
+// QueueList.java
+public class QueueList implements IntQueue {
+    private IntList data = new IntList();
+    public boolean empty() { return data.isEmpty(); }
+    public void add(int item) { data.addLast(item); }
+    public int peek() { return data.getFirst(); }
+    public int remove() { return data.removeFirst(); }
 }

@@ -1,25 +1,8 @@
-public class StackArray implements IntStack{
-    @Override
-    public boolean empty() {
-        return false;
-    }
-
-    @Override
-    public int peek() {
-        return 0;
-    }
-
-    @Override
-    public int pop() {
-        return 0;
-    }
-
-    @Override
-    public void push(int item) {
-        return;
-    }
-
-    static void main() {
-
-    }
+// StackArray.java
+public class StackArray implements IntStack {
+    private IntArray data = new IntArray();
+    public boolean empty() { return data.isEmpty(); }
+    public int peek() { return data.get(data.size() - 1); }
+    public int pop() { return data.removeLast(); }
+    public void push(int item) { data.add(item); }
 }
