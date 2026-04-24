@@ -1,4 +1,3 @@
-// QueueList.java
 public class QueueList implements IntQueue {
     private IntList data = new IntList();
     public boolean empty() { return data.isEmpty(); }

@@ -36,7 +36,7 @@ public class Main {
         System.out.print("Sorted Descending: ");
         IntArray sorted = new IntArray();
         while (!heap.empty()) sorted.add(heap.remove());
-        // Вывод с конца для убывающего порядка
+
         for (int i = sorted.size() - 1; i >= 0; i--) {
             System.out.print(sorted.get(i) + " ");
         }

@@ -1,4 +1,3 @@
-// StackArray.java
 public class StackArray implements IntStack {
     private IntArray data = new IntArray();
     public boolean empty() { return data.isEmpty(); }

@@ -1,4 +1,3 @@
-// QueueStack.java
 public class QueueStack implements IntQueue {
     private StackArray s1 = new StackArray();
     private StackArray s2 = new StackArray();
